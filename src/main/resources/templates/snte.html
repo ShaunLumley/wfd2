@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>No.</th>
+					<th>NSN</th>
+					<th>SCA</th>
+				</tr>
+			</thead>
+			<tr th:each="row: ${snte}">
+
+
+				<td>
+					<a th:href="@{/snte/{id}(id=${row.id})}" class="btn btn-info" role="button"> 
+						<span th:text="${row.partName}"></span>
+					</a>
+				</td>
+				<td><span th:text="${row.partNo}"></span></td>
+				<td><span th:text="${row.nsn}"></span></td>
+				<td><span th:text="${row.sca}"></span></td>
+
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+</html>

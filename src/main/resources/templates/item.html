@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div>
+		<span>Name: </span>
+		<span th:text="${item.partName}"></span>
+	</div>
+	<div>
+		<span>Part No: </span>
+		<span th:text="${item.partNo}"></span>
+	</div>
+	<div>
+		<span>NSN: </span>
+		<span th:text="${item.nsn}"></span>
+	</div>
+	<div>
+		<span>Serial No: </span>
+		<span th:text="serialNo"></span>
+	</div>
+	<div>
+		<span>MILIS Name: </span>
+		<span th:text="${item.milisName}"></span>
+	</div>
+	<div>
+		<span>SCA: </span>
+		<span th:text="${item.sca}"></span>
+	</div>
+	<div>
+		<span>GSERD: </span>
+		<span th:text="${item.gserd}"></span>
+	</div>
+	<div>
+		<span>equipmentNo: </span>
+		<span th:text="${item.equipmentNo}"></span>
+	</div>
+	<div>
+		<span>parentNo: </span>
+		<span th:text="${item.parentNo}"></span>
+	</div>
+	<div>
+		<span>Is Parent: </span>
+		<span th:text="${item.isParent}"></span>
+	</div>
+	<div>
+		<span>picture: </span>
+		<span th:text="${item.picture}"></span>
+	</div>
+	<div>
+		<span>comments: </span>
+		<span th:text="${item.comments}"></span>
+	</div>
+	<div>
+		<span>info: </span>
+		<span th:text="${item.info}"></span>
+	</div>
+</body>
+</html>
